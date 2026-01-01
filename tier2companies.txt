@@ -1,0 +1,90 @@
+Here’s a solid list of **common Java coding and conceptual questions** typically asked in Tier‑2 company interviews (TCS, Wipro, Tech Mahindra, Mindtree, HCL, etc.). These are based on recent posts and guides for Java developer roles ([zerotomastery.io][1]):
+
+---
+
+## 🔧 Basic Coding Problems
+
+* **String and Array Problems:**
+
+  * Reverse a string without built-in functions ([digitalocean.com][2])
+  * Reverse a number
+  * Check if a string/number is a palindrome
+  * Remove duplicates from array/strings
+  * Swap two numbers without a temporary variable ([en.wikipedia.org][3], [indeed.com][4])
+  * Find second largest element in an array ([digitalocean.com][2])
+  * Sum of digits, factorials, prime checks, Fibonacci (iterative/recursive)
+
+* **Simple Algorithms:**
+
+  * Count vowels/duplicate characters
+  * Sort an array
+  * Prime factorization or prime checking
+
+---
+
+## ⚙️ Intermediate & Core Java
+
+* **Linked List operations:** Reverse a linked list ([digitalocean.com][2], [medium.com][5])
+* **Deadlock example:** Create a thread deadlock scenario ([digitalocean.com][2])
+* **Binary search**, **Merge sort**, **Character pyramids**, **File/string processing**, **HashMap sorting by value** ([digitalocean.com][2])
+
+---
+
+## 🧠 Core Java & OOP Concepts
+
+* Collections: `ArrayList`, `LinkedList`, `HashMap`, `Hashtable`, `TreeMap`, sets&#x20;
+* Differences: `String` vs `StringBuilder` vs `StringBuffer` ([datacamp.com][6])
+* Exception handling (`try/catch/finally`) ([datacamp.com][6])
+* `==` vs `.equals()`, autoboxing/unboxing ([datacamp.com][6])
+* Inheritance, method overloading and overriding, `enum`, `static`, `final`, `transient`, `volatile` ([datacamp.com][6])
+
+---
+
+## 🧵 Concurrency & Java 8+
+
+* `Runnable` vs `Callable`, fail-fast vs fail-safe iterators, `volatile` keyword&#x20;
+* Thread-safe `Singleton`, `synchronized`, the `Fork/Join framework` ([datacamp.com][6])
+
+---
+
+### ✅ How to Use This List
+
+1. **Start with basics**: string/number manipulation and array puzzles.
+2. **Move to data structures**: linked lists, maps, and sorting algorithms.
+3. **Deep dive into Java**: collections, exception handling, core keywords.
+4. **Practice concurrency & Java 8+ features**.
+
+---
+
+### 🧩 Example Problem & Solution
+
+**Reverse a Linked List** (frequent Tier-2 DS challenge):
+
+```java
+public class ListNode { int val; ListNode next; ListNode(int v){ val=v; } }
+
+public ListNode reverseList(ListNode head) {
+    ListNode prev = null;
+    ListNode curr = head;
+    while (curr != null) {
+        ListNode next = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = next;
+    }
+    return prev;
+}
+```
+
+---
+
+### 📚 Want Code Snippets?
+
+I can provide detailed Java code for any of these problems—just tell me which ones you'd like!
+
+[1]: https://zerotomastery.io/blog/java-coding-interview-questions/?utm_source=chatgpt.com "Java Coding Interview Questions + Answers (With Code Examples)"
+[2]: https://www.digitalocean.com/community/tutorials/java-programming-interview-questions?utm_source=chatgpt.com "Top Java Coding Interview Questions (With Answers) - DigitalOcean"
+[3]: https://en.wikipedia.org/wiki/LeetCode?utm_source=chatgpt.com "LeetCode"
+[4]: https://www.indeed.com/career-advice/interviewing/java-coding-interview-questions?utm_source=chatgpt.com "46 Java Programming Interview Questions (And Sample Answers)"
+[5]: https://medium.com/%40mktechm/5-years-experienced-java-coding-interview-questions-4470b1a17330?utm_source=chatgpt.com "5+ Years experienced Java coding interview questions - Medium"
+[6]: https://www.datacamp.com/blog/java-interview-questions?utm_source=chatgpt.com "56 Java Interview Questions And Answers For All Levels - DataCamp"
