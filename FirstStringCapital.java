@@ -15,7 +15,23 @@
 //     }
 // }
 
-// logic 2nd
+
+
+// 2nd logic
+// public class   stringss{
+//     public  static  String inputs (String one ,String two ){
+//      one = "hello";
+//      two="world!";
+//       String output=one.substring(0,1).toUpperCase()+one.substring(1)+ " "+two.substring(0,1).toUpperCase() + two.substring(1);
+//       return output;
+//      }
+//      public static void main(String args[]){
+//          String result=inputs(" ", " ");
+//          System.out.println(result);
+//      }
+// }
+
+// logic 3rd
 public class FirstStringCapital {
  public static void main(String[]args){
      String input1="hello";
